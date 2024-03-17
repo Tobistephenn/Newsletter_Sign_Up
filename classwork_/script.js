@@ -9,8 +9,7 @@ function subscribeBtn () {
         emptyInput.style.display = 'block';
         emailBox.style.borderColor = 'tomato';
         emailBox.style.backgroundColor = 'rgb(223, 167, 157)';
-    } else {
-        if (!emailBox.value.endsWith('@gmail.com' || '@outlook.com' || '@yahoo.com' || '@icloud.com' || '@hotmail.com')) {
+    } else if (!emailBox.value.endsWith('@gmail.com' || '@outlook.com' || '@yahoo.com' || '@icloud.com' || '@hotmail.com')) {
             wrongEmailFormat.style.display = 'block';
             emailBox.style.borderColor = 'tomato';
             emailBox.style.backgroundColor = 'rgb(223, 167, 157)';
@@ -18,7 +17,4 @@ function subscribeBtn () {
             generalContainer.style.display = 'none';
             successMessage.style.display = 'block';
         };
-    }
-    
-    
-};
+    };

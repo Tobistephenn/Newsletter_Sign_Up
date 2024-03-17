@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+}
+
+.general-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: fit-content;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.subscribe-container {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0rem 0rem 1rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+.texts {
+    font-size: 11.5px;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+/* for styling the email address text and the error message */
+.email-error {
+    margin: 1rem 0rem 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style the error message and set display 
+to none. To set display to block with JavaScript */
+#error-message {
+    font-size: 9px;
+    color: tomato;
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px;
+    border-color: white;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    margin-top: 1rem;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(167, 36, 36), tomato);
+}
+
+.image-container {
+    background-image: url(illustration-sign-up-desktop.svg);
+    width: 14rem;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 0rem;
+        width: 375px;
+    }
+
+   .general-container {
+        width: 375px;
+        height: 100vh;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: 0px;
+        border-radius: 0rem;
+        padding: 0rem 1.5rem 1.5rem;
+   }
+
+   .image-container {
+        background-image: url(illustration-sign-up-mobile.svg);
+   }
+}
